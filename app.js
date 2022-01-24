@@ -1,11 +1,9 @@
 const express = require('express');
 
+const quoteRoutes = require('./routes/quotes.routes');
+
 const app = express();
 
-app.get('/quote', function (req, res, next) {
-	res.json({
-		quote: 'This is the quote!',
-	});
-});
+app.use('/routes', quoteRoutes);
 
 app.listen(3000);
