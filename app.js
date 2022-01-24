@@ -6,7 +6,7 @@ const quoteRoutes = require('./routes/quotes.routes');
 
 const app = express();
 
-app.use('/routes', quoteRoutes);
+app.use('/quote', quoteRoutes);
 
 app.use(function(error, req, res, next) {
   res.status(500).json({
@@ -15,11 +15,7 @@ app.use(function(error, req, res, next) {
 })
 
 db.initDb().then(function() {
-  app.listen(3000));
-}).catch((function(error) {
+  app.listen(3000);
+}).catch(function(error) {
   console.log('Connection to the database failed');
-}) => {
-  
-})
-
-app.listen(3000);
+});
