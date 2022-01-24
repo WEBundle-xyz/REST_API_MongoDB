@@ -1,6 +1,9 @@
-function getRandomQuote(req, res, next) {
+const Quote = require('../models/quotes.models');
+
+async function getRandomQuote(req, res, next) {
+	const randomQuote = await Quote.getRandomQuote();
 	res.json({
-		quote: 'A quote..`',
+		quote: randomQuote,
 	});
 }
 
