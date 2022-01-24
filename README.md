@@ -8,12 +8,6 @@
 
 [3 - Added the database ](../../tree/0202ecd6942c03669da71a055926bcb81f0acda5/)
 
-[4 - Empty ](../../tree//)
+[4 - Succesfully connected the database ](../../tree/34da6ee6e83100f03fab110600f42ed5cd60fa0f/)
 
-[5 - Empty ](../../tree//)
-
-[6 - Empty ](../../tree//)
-
-[7 - Empty ](../../tree//)
-
-[8 - Empty ](../../tree//)
+[5 - REST_API - Completed ](../../tree//)
